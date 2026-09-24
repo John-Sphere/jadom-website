@@ -18,7 +18,7 @@ const plotImg150 = 'images/plot-150sqm.jpg';
       sub:'Choose from a range of plot sizes at Sunrise Abuja Phase 1, Kabusa, Ketti North.',
       sizes: [
         { sqm:150, title:'150 SQM - 3 Bedroom Terrace Duplex (Land)', price:'\u20A67,500,000', img: plotImg150 },
-        { sqm:300, title:'300 SQM - 4 Bedroom Semi Detached Duplex (Land)', price:'\u20A612,500,000', img: plotImg300 },
+        { sqm:300, title:'300 SQM - 4 Bedroom Semi Detached Duplex (Land)', price:'\u20A615,000,000', img: plotImg300 },
         { sqm:400, title:'400 SQM - 4 Bedroom Fully Detached Duplex + BQ (Land)', price:'\u20A617,500,000', img: plotImg400 },
         { sqm:500, title:'500 SQM - 5 Bedroom Fully Detached Duplex + BQ (Land)', price:'\u20A625,000,000', img: plotImg500 },
         { sqm:800, title:'800 SQM - Blocks of Flats (Land)', price:'\u20A648,000,000', img: plotImg800 }
