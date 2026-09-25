@@ -263,7 +263,7 @@ blockquote.about-quote{font-family:'Fraunces',serif; font-style:italic; font-siz
 .visit-copy h2{font-size:clamp(30px,4vw,42px); margin-bottom:16px;}
 .visit-copy p{font-size:15px; color:var(--muted); margin-bottom:20px;}
 .visit-copy a.text-btn{color:var(--clay);}
-.map-block{position:relative; overflow:hidden; background-color:var(--sand-2); min-height:340px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:10px;}
+.map-block{position:relative; overflow:hidden; background-color:var(--sand-2); min-height:340px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:10px; text-decoration:none; color:inherit; cursor:pointer;}
 .map-block img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;}
 .map-block::before{content:''; position:absolute; inset:0; background:rgba(33,28,22,.12); z-index:1;}
 .map-block .map-pin, .map-block > span{position:relative; z-index:2;}
