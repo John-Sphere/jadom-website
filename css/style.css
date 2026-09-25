@@ -378,7 +378,7 @@ footer.site-footer{background:#1F4566; color:#DCD3BE; padding:56px 0 30px;}
 .app-success .icon-circle{width:60px; height:60px; border-radius:50%; background:rgba(181,138,62,.15); color:var(--clay); display:flex; align-items:center; justify-content:center; margin:0 auto 18px; font-size:28px;}
 .app-success h3{font-size:22px; margin-bottom:10px;}
 .app-success p{color:var(--muted); font-size:14.5px; max-width:40ch; margin:0 auto;}
-@media (max-width:700px){ .app-grid{grid-template-columns:1fr;} .app-steps{grid-template-columns:1fr; gap:6px; padding:20px 24px 0;} .app-modal-body{padding:22px 24px 28px;} .app-modal-head{padding:24px;} }
+@media (max-width:700px){ .app-grid{grid-template-columns:1fr;} .app-steps{grid-template-columns:1fr 1fr 1fr; gap:6px; padding:20px 20px 0;} .app-step-tab{padding:8px 4px; font-size:11px;} .app-step-tab b{font-size:13px;} .app-modal-body{padding:22px 20px 28px;} .app-modal-head{padding:24px;} }
 
 /* site preloader */
 .site-preloader{position:fixed; inset:0; z-index:9999; background:var(--ink); display:flex; align-items:center; justify-content:center; transition:opacity .7s ease, visibility .7s ease;}
