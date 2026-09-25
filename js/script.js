@@ -3,7 +3,7 @@
     if(preloader){
       setTimeout(function(){
         preloader.classList.add('loaded');
-      }, 700);
+      }, 1900);
     }
   });
 

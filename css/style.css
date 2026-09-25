@@ -381,12 +381,14 @@ footer.site-footer{background:#1F4566; color:#DCD3BE; padding:56px 0 30px;}
 @media (max-width:700px){ .app-grid{grid-template-columns:1fr;} .app-steps{grid-template-columns:1fr; gap:6px; padding:20px 24px 0;} .app-modal-body{padding:22px 24px 28px;} .app-modal-head{padding:24px;} }
 
 /* site preloader */
-.site-preloader{position:fixed; inset:0; z-index:9999; background:var(--ink); display:flex; align-items:center; justify-content:center; transition:opacity .6s ease, visibility .6s ease;}
+.site-preloader{position:fixed; inset:0; z-index:9999; background:var(--ink); display:flex; align-items:center; justify-content:center; transition:opacity .7s ease, visibility .7s ease;}
 .site-preloader.loaded{opacity:0; visibility:hidden; pointer-events:none;}
-.preloader-logo{display:flex; flex-direction:column; align-items:center; gap:16px; opacity:0; transform:scale(.85); animation:preloaderIn 1s ease forwards;}
-.preloader-logo img{width:64px; height:64px; object-fit:cover; border-radius:6px; box-shadow:0 0 40px rgba(181,138,62,.35);}
-.preloader-wordmark{text-align:center; color:var(--sand); letter-spacing:.08em;}
-.preloader-wordmark b{display:block; font-family:'Fraunces',serif; font-size:22px; font-weight:500; letter-spacing:.05em;}
-.preloader-wordmark span{display:block; font-size:10px; color:var(--gold); text-transform:uppercase; letter-spacing:.25em; margin-top:4px;}
-@keyframes preloaderIn{0%{opacity:0; transform:scale(.85);} 100%{opacity:1; transform:scale(1);}}
-@media (prefers-reduced-motion: reduce){ .preloader-logo{animation:none; opacity:1; transform:none;} }
+.preloader-lockup{display:flex; align-items:center; gap:0; animation:lockupGap .5s ease forwards; animation-delay:.85s;}
+.preloader-icon{width:60px; height:60px; object-fit:cover; border-radius:6px; box-shadow:0 0 40px rgba(181,138,62,.35); opacity:0; filter:blur(10px); transform:scale(.8); animation:iconIn .8s ease forwards;}
+.preloader-wordmark{color:var(--sand); letter-spacing:.06em; white-space:nowrap; max-width:0; overflow:hidden; opacity:0; transform:translateX(-8px); animation:wordmarkIn .7s ease forwards; animation-delay:.9s;}
+.preloader-wordmark b{display:block; font-family:'Fraunces',serif; font-size:20px; font-weight:500; letter-spacing:.04em;}
+.preloader-wordmark span{display:block; font-size:9.5px; color:var(--gold); text-transform:uppercase; letter-spacing:.22em; margin-top:3px;}
+@keyframes iconIn{0%{opacity:0; filter:blur(10px); transform:scale(.8);} 100%{opacity:1; filter:blur(0); transform:scale(1);}}
+@keyframes lockupGap{0%{gap:0;} 100%{gap:16px;}}
+@keyframes wordmarkIn{0%{opacity:0; max-width:0; transform:translateX(-8px);} 100%{opacity:1; max-width:260px; transform:translateX(0);}}
+@media (prefers-reduced-motion: reduce){ .preloader-icon, .preloader-wordmark, .preloader-lockup{animation:none; opacity:1; filter:none; transform:none; max-width:none; gap:16px;} }
