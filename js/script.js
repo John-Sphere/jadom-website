@@ -1,3 +1,12 @@
+  window.addEventListener('load', function(){
+    const preloader = document.getElementById('sitePreloader');
+    if(preloader){
+      setTimeout(function(){
+        preloader.classList.add('loaded');
+      }, 700);
+    }
+  });
+
 const plotImg150 = 'images/plot-150sqm.jpg';
   const plotImg300 = 'images/plot-300sqm.jpg';
   const plotImg400 = 'images/plot-400sqm.jpg';
