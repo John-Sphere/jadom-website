@@ -8,7 +8,7 @@
 }
 :root[data-theme="dark"]{ --sand:#171410; --sand-2:#1E1A14; --ink:#F2EADB; --line:#3A3226; --muted:#B0A38B; --cream:#211C16; }
 *{box-sizing:border-box; margin:0; padding:0;}
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth; background:var(--sand);}
 body{background:var(--sand); color:var(--ink); font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif; line-height:1.55; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
 a{color:inherit; text-decoration:none;} img,svg{max-width:100%; display:block;}
 .wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
